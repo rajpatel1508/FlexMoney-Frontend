@@ -38,7 +38,7 @@ export default function Register() {
         }
         axios({
             method: 'POST',
-            url: 'http://localhost:2000/register',
+            url: 'https://flex-money-backend-fkwy6f3k1-rajpatel1508.vercel.app/registercd',
             data: { firstName, lastName, contactNumber, age, batch }
         })
             .then((res) => {
