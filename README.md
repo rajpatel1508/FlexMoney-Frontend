@@ -39,32 +39,43 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+# Project Description
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This Website offers functionality to register user for Yoga class. The website contains the form which takes user information and payment details and register them if payment is successful.
+Website is developed on MERN stack i.e. React for front-end and Node,Express and MongoDB for Back-end. 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Dependencies
 
-### Code Splitting
+react : React is a JavaScript library for creating user interfaces.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+react-router-dom : package contains bindings for using React Router in web applications.
+```bash
+npm i react-router-dom
+```
+react-toastify : React-Toastify allows you to add custom notifications to your app.
+```bash
+npm i react-toastify
+```
+axios : Axios is a simple promise based HTTP client for the browser and node.js.
+```bash
+npm i axios
+```
 
-### Analyzing the Bundle Size
+## Front-end functionality
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The homepage is to contain basic information about the website and organisation.
+The register button on homepage redirects to register form.
+The register form contains folowing fields.
 
-### Making a Progressive Web App
+- First Name : First Name of User
+- Last Name : Last Name of User
+- Contact Number : Contact Number of User
+- Age : Age of User (must be between 18 to 65)
+- Batch : Batch in which user want to join class
+- Card Number : Credit/Debit Card Number for Payment
+- CVV : CVV of card for payment
+- Expiry Date : Date of Expiry of card
+- Amount : A Fixed field containing amount to be payed.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+All the data first go through Validation before sending to back-end. If any data is not valid an error message is sent to front-end.
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
