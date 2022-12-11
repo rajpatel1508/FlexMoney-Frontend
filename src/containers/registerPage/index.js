@@ -4,7 +4,9 @@ import { ToastContainer, toast } from 'react-toastify';
 import './style.css';
 import ReactDatePicker from 'react-datepicker';
 
+//Registration Form
 export default function Register() {
+    //UseStates to store values of form
     const currentDate = new Date();
     const [firstName, setfirstName] = useState('');
     const [lastName, setlastName] = useState('');
@@ -16,8 +18,11 @@ export default function Register() {
     const [expiryMonth, setExpiryMonth] = useState(currentDate);
     const [expiryYear, setExpiryYear] = useState(currentDate);
 
+    //Function to send data to backend on button click
     const handleClick = (e) => {
         e.preventDefault();
+
+        //Validations
         if (!firstName) {
             return toast.error('First Name required');
         }
@@ -36,6 +41,8 @@ export default function Register() {
         if (!cvv || cvv < 100 || cvv > 999) {
             return toast.error('Invalid CVV');
         }
+
+        //Post request to backend
         axios({
             method: 'POST',
             url: 'https://flex-money-backend-fkwy6f3k1-rajpatel1508.vercel.app/register',

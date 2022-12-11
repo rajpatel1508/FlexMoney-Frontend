@@ -8,15 +8,23 @@
     /* background-repeat: no-repeat; */
 }
 
-h1{
+span {
     text-align: center;
-    margin: 50px 0 50px;
+    color: rgb(255, 255, 255);
+    margin: 50px 0 25px;
 }
 
-.lead{
+h1 {
     text-align: center;
-    margin: 50px 0px 50px;
-    color: black;
+    color: rgb(0, 0, 0);
+    margin: 50px 0 25px;
+}
+
+.lead {
+    text-align: center;
+    text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.79);
+    margin: 50px 0px 100px;
+    color: rgb(254, 254, 254);
 }
 
 .cover-container {
@@ -34,7 +42,7 @@ h1{
     color: white;
 }
 
-footer{
+footer {
     position: fixed;
     bottom: 0;
 }
